@@ -15,6 +15,8 @@ end
 
 # ======================================
 # 2- Using the following Hash
+puts 
+
 
 birthdays = {
   "Cindy" => "June 10",
@@ -24,13 +26,16 @@ birthdays = {
 }
 
 # Use the each method to iterate through it and print out a sentence stating each friends name and birthday
-#
-#
-#
+
+birthdays.each do |name, date|
+  p "Look! It's #{date}! Happy B-day #{name}!"
+end 
 
 
 # ======================================
 # 3- Using the following Hash
+puts 
+
 
 login_statuses = {
   "Cindy" => true,
@@ -40,6 +45,9 @@ login_statuses = {
 }
 
 # Use the each method to iterate through it and print ONLY the names of friends who are "logged in"
-#
-#
-#
+
+login_statuses.each do |name, logged_in|
+  if logged_in == true
+    puts name
+  end
+end 
