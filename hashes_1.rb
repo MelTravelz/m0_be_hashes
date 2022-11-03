@@ -50,7 +50,6 @@ email = {
   date: "Nov. 3, 2022",
   text: "Hey, It's been a while. Let's catch up. Call me! Mel",
   attachments: false, 
-  bbc: false
 }
 
 p email
@@ -83,25 +82,25 @@ posts = ["image at beach", "holiday party", "adorable puppy", "video of cute bab
 # that relate to each individual Instagram post:
 
 
-posts = [
-  {
-    image_src: "./images/beach.png",
-    caption: "At the beach with my besties",
-    timestamp: "4:37 PM August 13, 2019",
-    number_likes: 0,
-    comments: []
-  }, 
-  {
-    image_src: "./images/holiday-party.png",
-    caption: "What a great holiday party omg",
-    timestamp: "11:37 PM December 31, 2019",
-    number_likes: 13,
-    comments: []
-  }
-]
+# posts = [
+#   {
+#     image_src: "./images/beach.png",
+#     caption: "At the beach with my besties",
+#     timestamp: "4:37 PM August 13, 2019",
+#     number_likes: 0,
+#     comments: []
+#   }, 
+#   {
+#     image_src: "./images/holiday-party.png",
+#     caption: "What a great holiday party omg",
+#     timestamp: "11:37 PM December 31, 2019",
+#     number_likes: 13,
+#     comments: []
+#   }
+# ]
 
-p posts
-p posts[0]
+# p posts
+# p posts[0]
 
 
 # The code snippet above shows an Array with 2 elements. Each element in the Array is a 
@@ -113,3 +112,28 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+sent_emails = [
+  {
+    from: "MelTravelz@gmail.com",
+    to: "mymomrocks@gmail.com",
+    timestamp: "3:57 PM November 3, 2022",
+    text: "Don't forget to pick up more avocados at the store this time PLEASE! hahaha",
+    attachments: true, 
+  },
+  {
+    from: "MelTravelz@gmail.com",
+    to: "doggy_daycare_R_us@gmail.com",
+    timestamp: "4:05 PM November 3, 2022",
+    text: "Looking to kennel my 2 goldendoodles this weekend. Is there space available?",
+    attachments: false, 
+  }, 
+  {
+    from: "MelTravelz@gmail.com",
+    to: "Pearly_Whites@gmail.com",
+    timestamp: "6:16 PM November 3, 2022",
+    text: "Are we still set for my teeth cleaning appointment this weekend? Thanks!",
+    attachments: false, 
+  }
+]
+p sent_emails
