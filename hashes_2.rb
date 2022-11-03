@@ -8,9 +8,9 @@ states = {
 }
 
 # Use the each method to iterate through it and print out a sentence stating each state name and abbreviation
-#
-#
-#
+states.each do |state, abbreviation|
+  p "Are you from #{state}? Then click on the #{abbreviation} icon below." 
+end 
 
 
 # ======================================
